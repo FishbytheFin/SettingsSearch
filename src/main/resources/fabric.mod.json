@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "settingssearch",
+  "version": "${version}",
+  "name": "SettingsSearch",
+  "description": "Search through settings to quickly modify your game",
+  "authors": [
+    "FishbytheFin"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/SettingsSearch/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "settingssearch.settingssearch.client.SettingsSearchClient"
+    ],
+    "main": [
+      "settingssearch.settingssearch.SettingsSearch"
+    ]
+  },
+  "mixins": [
+    "SettingsSearch.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.21",
+    "fabric": "*",
+    "minecraft": "1.20.1"
+  }
+}
